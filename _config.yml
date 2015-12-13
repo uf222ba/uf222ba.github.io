@@ -1,21 +1,96 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+title:            Ulrika Falk
+description:      A blog about web development with JavaScript (React, Node, npm, Redux, React Router, etc).
+#disqus_shortname: neohpstrtheme
+reading_time:     true
+words_per_minute: 200
+logo:             images/logo.png
+# Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
+# When testing locally leave blank or use http://localhost:4000
+# url: http://uf222ba.github.io
 
-# Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+menu:
+  - title: 'Home'
+    url: '/'
+  - title: 'About'
+    url: '/about'
+#  - title: 'Tags'
+#    url: '/tags'
+#  - title: 'Categories'
+#    url: '/categories'
+#    type: 'categories'
+#  - title: 'Favorites'
+#    url: '#'
+#    submenu:
+#      - title: 'highlighter'
+#        url: '/code-highlighting-post/'
+#      - title: 'intro'
+#        url: '/readability-post/'
 
-# Build settings
-markdown: kramdown
+# Owner/author information
+owner:
+  name:           Ulrika Falk
+  site:           http://uf222ba.github.io/
+  avatar:         images/avatar.jpg
+  bio:            Love her family, animals and learning new things.
+  email:          uf222ba@student.lnu.se
+  # Social networking links used in footer. Update and remove as you like.
+  #twitter: aron_bordin
+  #facebook:
+  github: uf222ba
+  #stackexchange:
+  #linkedin:
+  #instagram:
+  #flickr:
+  #tumblr:
+  # google plus id, include the '+', eg +AronBordin
+  #google_plus:    +yourid
+
+social:
+  - title: "github"
+    url: "https://github.com/uf222ba"
+#  - title: "linkedin"
+#    url: "https://br.linkedin.com/in/aronbordin"
+#  - title: "youtube"
+#    url: "https://www.youtube.com/channel/UCfnSek-9HPWOx5e2pH7VFgg"
+# Background image to be tiled on all pages
+background:
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Europe/Stockholm
+future:      true
+highlighter: pygments
+markdown:    kramdown
+gems:
+  - jekyll-sitemap
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
+
+# Amount of post to show on home page
+paginate: 5
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: true
+
+  coderay:
+    coderay_line_numbers: nil
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
