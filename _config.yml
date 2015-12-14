@@ -1,7 +1,7 @@
 title:            Ulrika Falk
 description:      A blog about web development with JavaScript (React, Node, npm, Redux, React Router, etc).
-#disqus_shortname: neohpstrtheme
-reading_time:     true
+disqus_shortname: ufalk
+reading_time:     false
 words_per_minute: 200
 logo:             images/logo.png
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
