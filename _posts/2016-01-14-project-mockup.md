@@ -4,7 +4,7 @@ title:  "Project Mockup"
 date:   2016-01-14 17:00:00 +0100
 categories: React Redux Project App
 ---
-![My helpful screenshot]({{ site.url }}/images/dogname_mockup.png)
+![Project mockup]({{ site.url }}/images/dogname_mockup.png)
 
 This is my project mockup. I've done it with <a href="https://balsamiq.com/">Balsamiq web app trial</a>. Balsamiq is a nice, easy to use tool for making mockups.
 
